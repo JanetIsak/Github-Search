@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Welcome to Github</h1>
+
+  <form (ngSubmit)="searchUser()">
+    <div class="form-group">
+      <label for="Github ID">Github ID</label>
+      <input name="user" [(ngModel)]="githubUser" type="text" placeholder="User Name" class="form-control">
+      <button type="submit" name="button">Search</button>
+    </div>
+  </form>
+</div>
+
+<p *ngIf="userdata">{{userdata.name}}</p>
