@@ -3,11 +3,16 @@
 
   <form (ngSubmit)="searchUser()">
     <div class="form-group">
-      <label for="Github ID">Github ID</label>
-      <input name="user" [(ngModel)]="githubUser" type="text" placeholder="User Name" class="form-control">
+      <label for="Github-ID">Github ID</label>
+      <input id="Github-ID" name="user" [(ngModel)]="githubUser" type="text" placeholder="User Name" class="form-control" required>
+      <br>
       <button type="submit" name="button">Search</button>
     </div>
   </form>
 </div>
 
-<p *ngIf="userdata">{{userdata.name}}</p>
+<!-- <p *ngIf="userdata">{{userdata.name}}</p> -->
+<div class="" *ngIf="userdata">
+  <p>{{userdata.name}}</p>
+  <img src="{{userdata.avatar_url}}">
+</div>
