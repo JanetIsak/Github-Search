@@ -6,6 +6,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 
 
@@ -14,6 +15,7 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     SearchComponent,
     HomeComponent,
+    NotfoundComponent,
     
   ],
   imports: [
