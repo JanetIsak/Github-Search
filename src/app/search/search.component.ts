@@ -15,13 +15,14 @@ export class SearchComponent implements OnInit {
 
   constructor(private http:HttpClient) { }
 
-  ngOnInit() {
-  }
+ngOnInit() {
+}
   searchUser(){
     this.link=this.userLink+this.githubUser+"?access_token="+this.apiKey
     this.http.get(this.link).subscribe((response:any)=>{
       this.userdata=response
       console.log(this.userdata)
 
-    }
+    })
+}
 }
