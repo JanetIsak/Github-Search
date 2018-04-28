@@ -3,8 +3,13 @@
 }
 
 .container-fluid {
-  padding: 20%;
-  padding-left: 35%;
+  padding: 10%;
+  padding-left: 5%;
+  padding-bottom: 35%;
   background-color: blue;
-  color: white;
+  font-size: 20px;
+}
+
+.row {
+  padding-left: 0%;
 }

@@ -1,25 +1,27 @@
 <div class="container-fluid">
-  <h1>Welcome to Github</h1>
 
-  <form (ngSubmit)="logIn()">
+
+  <form (ngSubmit)="searchUser()">
     <div class="form-group">
       <label for="Github-ID">Github ID</label>
       <input id="Github-ID" name="user" [(ngModel)]="githubUser" type="text" placeholder="Github Name" class="form-control" required>
       <br>
-      <button type="submit" class="button">LogIn</button>
+      <button type="submit" class="button">Search</button>
     </div>
   </form>
-</div>
-
-<p *ngIf="userdata">{{userdata.name}}</p> -->
-<div class="row" *ngIf="userdata">
-  <div class="col-md-6">
-    <img src="{{userdata.avatar_url}}">
-  </div>
-  <div class="col-md-6">
-    <p>Name: {{userdata.name}}</p>
-    <p>Repository: {{userdata.repos_url}} ({{userdata.public_repos}})</p>
-    <p>URL: {{userdata.html_url}}</p>
-
-
+  <br>
+  <br>
+  <br>
+  <div class="row" *ngIf="userdata">
+    <div class="col-md-6">
+      <img src="{{userdata.avatar_url}}">
+    </div>
+    <div class="col-md-6">
+      <b>
+      <p>Name: {{userdata.name}}</p>
+      <p>ID: {{userdata.id}}</p>
+      <p>Repository: {{userdata.repos_url}} ({{userdata.public_repos}})</p>
+      <p>URL: {{userdata.html_url}}</p>
+      </b>
+    </div>
   </div>
