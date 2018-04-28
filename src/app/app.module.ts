@@ -5,6 +5,7 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -12,6 +13,7 @@ import { SearchComponent } from './search/search.component';
   declarations: [
     AppComponent,
     SearchComponent,
+    HomeComponent,
     
   ],
   imports: [
