@@ -1,3 +1,10 @@
 #Github-ID {
-  width: 50%;
+  width: 40%;
+}
+
+.container-fluid {
+  padding: 20%;
+  padding-left: 35%;
+  background-color: blue;
+  color: white;
 }

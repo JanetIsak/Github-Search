@@ -17,7 +17,7 @@ export class SearchComponent implements OnInit {
 
   ngOnInit() {
   }
-  searchUser(){
+  logIn(){
     this.link=this.userLink+this.githubUser+"?access_token="+this.apiKey
     this.http.get(this.link).subscribe((response:any)=>{
       this.userdata=response
@@ -26,4 +26,3 @@ export class SearchComponent implements OnInit {
     }
 
   }
-}

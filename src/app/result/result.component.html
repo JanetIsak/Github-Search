@@ -1,3 +1,20 @@
-<p>
-  result works!
-</p>
+<div class="container-fluid">
+
+  <form (ngSubmit)="searchUser()">
+    <div class="form-group">
+      <input id="Github-ID" name="user" [(ngModel)]="githubUser" type="text" placeholder="Github Name" class="form-control" required>
+      <br>
+      <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+  </form>
+
+  <div class="row">
+    <div class="col-md-6">
+      <p>{{userdata.name}}</p>
+      <img src="{{userdata.avatar_url}}">
+    </div>
+    <div class="col-md-6">
+      <p>{{userdata.public_repos}}</p>
+    </div>
+  </div>
+</div>

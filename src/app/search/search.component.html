@@ -1,12 +1,12 @@
-<div class="container">
+<div class="container-fluid">
   <h1>Welcome to Github</h1>
 
-  <form (ngSubmit)="searchUser()">
+  <form (ngSubmit)="longIn()">
     <div class="form-group">
       <label for="Github-ID">Github ID</label>
-      <input id="Github-ID" name="user" [(ngModel)]="githubUser" type="text" placeholder="User Name" class="form-control" required>
+      <input id="Github-ID" name="user" [(ngModel)]="githubUser" type="text" placeholder="Github Name" class="form-control" required>
       <br>
-      <button type="submit" name="button">Search</button>
+      <button type="submit" class="button">LogIn</button>
     </div>
   </form>
 </div>
@@ -15,4 +15,10 @@
 <div class="" *ngIf="userdata">
   <p>{{userdata.name}}</p>
   <img src="{{userdata.avatar_url}}">
+  <p>{{userdata.public_repos}}</p>
+</div>
+
+
+<div>
+  <app-result></app-result>
 </div>
