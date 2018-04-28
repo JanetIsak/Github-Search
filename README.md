@@ -1,32 +1,42 @@
-<<<<<<< HEAD
-# GithubSearch
+Moringa School core IP2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+# _Github Search_
 
-## Development server
+#### _04.29.2018_
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### By _**Janet Isak**_
 
-## Code scaffolding
+## Description
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* _Github Search is a web application built using Angular 5 application._
 
-## Build
+_The applications allows users to:_
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+* _Search github users using their github user name_
 
-## Running unit tests
+## Setup/Installation Requirements
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* _Make sure you have node,npm, tsc and watchman installed._
+* _Clone this repository from my Github named JanetIsak._
+* _Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files._
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Known Bugs
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
-# Github-Search
-Angular-Github Search
->>>>>>> 60be581e92ba809c6c0297e23b111fe228f1ed80
+_The application input currently do not clear its input field after data submission._
+
+## Support and contact details
+
+_If you run into any issues or have questions, ideas or concerns, contact me at **janetisak@yahoo.com**. I encourage you to make a contribution to the code if see fit for improvement._
+
+## Technologies Used
+
+* _Angular JS_
+* _HTML & CSS_
+
+### License
+
+*This software is Licensed under the MIT License.*
+
+Copyright (c) 2018 **_Janet Isak_**
