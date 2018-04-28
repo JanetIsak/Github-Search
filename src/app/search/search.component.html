@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <h1>Welcome to Github</h1>
 
-  <form (ngSubmit)="longIn()">
+  <form (ngSubmit)="logIn()">
     <div class="form-group">
       <label for="Github-ID">Github ID</label>
       <input id="Github-ID" name="user" [(ngModel)]="githubUser" type="text" placeholder="Github Name" class="form-control" required>
@@ -12,11 +12,11 @@
 </div>
 
 <!-- <p *ngIf="userdata">{{userdata.name}}</p> -->
-<div class="" *ngIf="userdata">
-  <p>{{userdata.name}}</p>
+<!-- <div class="" *ngIf="userdata">
+  <p>{{userdata.login}}</p>
   <img src="{{userdata.avatar_url}}">
   <p>{{userdata.public_repos}}</p>
-</div>
+</div> -->
 
 
 <div>

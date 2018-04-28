@@ -7,14 +7,19 @@
       <button type="submit" class="btn btn-primary">Search</button>
     </div>
   </form>
-
-  <div class="row">
+  <br>
+  <br>
+  <br>
+  <div class="row" *ngIf="userdata">
     <div class="col-md-6">
-      <p>{{userdata.name}}</p>
       <img src="{{userdata.avatar_url}}">
     </div>
     <div class="col-md-6">
-      <p>{{userdata.public_repos}}</p>
+      <p>Name: {{userdata.name}}</p>
+      <p>Repository: {{userdata.repos_url}} ({{userdata.public_repos}})</p>
+      <p>{{userdata.html_url}}</p>
+
+
     </div>
   </div>
 </div>
