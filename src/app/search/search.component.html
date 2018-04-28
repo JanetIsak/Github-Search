@@ -11,14 +11,15 @@
   </form>
 </div>
 
-<!-- <p *ngIf="userdata">{{userdata.name}}</p> -->
-<!-- <div class="" *ngIf="userdata">
-  <p>{{userdata.login}}</p>
-  <img src="{{userdata.avatar_url}}">
-  <p>{{userdata.public_repos}}</p>
-</div> -->
+<p *ngIf="userdata">{{userdata.name}}</p> -->
+<div class="row" *ngIf="userdata">
+  <div class="col-md-6">
+    <img src="{{userdata.avatar_url}}">
+  </div>
+  <div class="col-md-6">
+    <p>Name: {{userdata.name}}</p>
+    <p>Repository: {{userdata.repos_url}} ({{userdata.public_repos}})</p>
+    <p>URL: {{userdata.html_url}}</p>
 
 
-<div>
-  <app-result></app-result>
-</div>
+  </div>
