@@ -9,13 +9,12 @@ import {SearchService} from './searchs/search.service';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
-// import { NotFoundComponent} from './notfound/notfound.component';
+
 
 const routes:Routes=[
   {path: 'home', component:HomeComponent},
   {path: 'search', component:SearchComponent},
-  {path:"",redirectTo:"/home",pathMatch:"full"}
-  // {path: '**', component:NotFoundComponent},
+  {path:"",redirectTo:"/home",pathMatch:"full"},
   ]
 
 @NgModule({
@@ -23,9 +22,7 @@ const routes:Routes=[
     AppComponent,
     HomeComponent,
     SearchComponent,
-    // NotFoundComponent,
-
-  ],
+],
   imports: [
     BrowserModule,
     FormsModule,
