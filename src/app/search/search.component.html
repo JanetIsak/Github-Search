@@ -1,6 +1,4 @@
 <div class="container-fluid">
-
-
   <form class="search-form">
     <div class="form-group">
       <input id="Github-ID" [(ngModel)]="username" name="username" (keyup)="findUserData()" type="text" placeholder=" Search Github with user name" class="form-control" required>
@@ -21,15 +19,15 @@
         <li class="list-item" *ngIf="userData.public_repos">Public Repository: {{userData.public_repos}}</li>
         <li class="list-item" *ngIf="userData.html_url">User URL: <a href="{{userData.html_url}}" target="_blank">{{userData.html_url}}</a></li>
       </ul>
+
       <div class="panel panel-default">
         <div class="panel-heading">
           <h5 class="panel-title">Repos</h5>
         </div>
         <div class="panel-body" *ngFor="let repo of repos">
-            <p>{{repo.name}} <a href="{{repo.html_url}}" target="_blank">View Project</a></p>
+          <p>{{repo.name}}<a href="{{repo.html_url}}" target="_blank">View Project</a></p>
         </div>
       </div>
       </b>
     </div>
   </div>
-</div>
