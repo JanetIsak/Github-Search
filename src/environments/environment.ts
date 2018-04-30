@@ -5,4 +5,6 @@
 
 export const environment = {
   production: false
+   clientid:'673683bfe0fff4d3763a';
+   clientsecret:'51dbc33787fda47d0acb89bbd3a2dcb73e8830da';
 };

@@ -1,28 +1,35 @@
 <div class="container-fluid">
 
 
-  <form (ngSubmit)="searchUser()">
+  <form class="search-form">
     <div class="form-group">
-      <label for="Github-ID">Github ID</label>
-      <input id="Github-ID" name="user" [(ngModel)]="githubUser" type="text" placeholder="Github Name" class="form-control" required>
-      <br>
-      <button type="submit" class="button">Search</button>
+      <input id="Github-ID" [(ngModel)]="username" name="username" (keyup)="findUserData()" type="text" placeholder=" Search Github with user name" class="form-control" required>
     </div>
   </form>
   <br>
   <br>
   <br>
-  <div class="row" *ngIf="userdata">
+  <div class="row" *ngIf="userData">
     <div class="col-md-6">
-      <img src="{{userdata.avatar_url}}">
+      <img src="{{userData.avatar_url}}" class="img-circle img-responsive" alt="Profile Image">
     </div>
     <div class="col-md-6">
       <b>
-      <p>Name: {{userdata.name}}</p>
-      <p>ID: {{userdata.id}}</p>
-      <p>Repository: {{userdata.repos_url}} ({{userdata.public_repos}})</p>
-      <a href="https://api.github.com/users/:username/repos">Repository Link</a>
-      <p>URL: {{userdata.html_url}}</p>
+      <ul class="list-group">
+        <li class="list-item" *ngIf="userData.name">Name: {{userData.name}}</li>
+        <li class="list-item" *ngIf="userData.id">ID: {{userData.id}}</li>
+        <li class="list-item" *ngIf="userData.public_repos">Public Repository: {{userData.public_repos}}</li>
+        <li class="list-item" *ngIf="userData.html_url">User URL: <a href="{{userData.html_url}}" target="_blank">{{userData.html_url}}</a></li>
+      </ul>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h5 class="panel-title">Repos</h5>
+        </div>
+        <div class="panel-body" *ngFor="let repo of repos">
+            <p>{{repo.name}} <a href="{{repo.html_url}}" target="_blank">View Project</a></p>
+        </div>
+      </div>
       </b>
     </div>
   </div>
+</div>
