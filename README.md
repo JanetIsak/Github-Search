@@ -19,7 +19,7 @@ _The applications allows users to:_
 * _Make sure you have node,npm, tsc and watchman installed._
 * _Clone this repository from my Github named JanetIsak._
 * _Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files._
-
+* _Go to "https://janetisak.github.io/Github-Search/" for more information._
 
 
 ## Known Bugs
